@@ -14,7 +14,6 @@
 }
 html {
   scroll-behavior: smooth;
-  overflow-x: hidden;
 }
 
 .swiper {
@@ -27,7 +26,6 @@ html {
   justify-content: center;
   align-items: center;
 }
-
 .Title {
   font-size: 40pt;
   font-family: "Inter", sans-serif;
@@ -50,27 +48,24 @@ ul {
 
 .Main_Slider_Header {
   background: linear-gradient(rgb(61, 112, 136, 0.2) 0%, rgb(0, 0, 0, 1) 100%);
-  z-index: 1;
   position: absolute;
   height: 100%;
   width: 100%;
   user-select:none ;
 }
-.Main_Slider_Header_Items{
-  border: blue solid;
-
-}
 .Main_Slider_Header_Text {
   font-family: "Zain", sans-serif;
-  font-weight: 400;
-  font-size: 50pt;
+  font-weight: 200;
+  font-size: 3.5em;
   color: white;
-
+  text-transform: capitalize;
+  margin-bottom: -4%;
 }
 .Main_Slider_Header_Text_Bold {
   font-family: "Zain", sans-serif;
   font-weight: 700;
-  font-size: 75pt;
+  font-size: 7em;
+  text-transform: capitalize;
   color: white;
 }
 .About_Us_Outer_Div {
