@@ -1,6 +1,9 @@
 .red {
   border: red solid;
 }
+.blue{
+  border: blue solid;
+}
 * {
   padding: 0;
   margin: 0;
@@ -14,8 +17,8 @@
 }
 html {
   scroll-behavior: smooth;
+  overflow-x: scroll
 }
-
 .swiper {
   width: 100%;
   height: 100%;
@@ -52,6 +55,15 @@ ul {
   height: 100%;
   width: 100%;
   user-select:none ;
+}
+.ASD{
+  background-color: red;
+}
+.row{
+}
+.left{
+  left: 0;
+  right: 0;
 }
 .Main_Slider_Header_Text {
   font-family: "Zain", sans-serif;
@@ -192,6 +204,20 @@ ul {
   font-weight: 500;
   color: #14719d;
   text-decoration: none;
+}
+.Members_Read_More::after{
+  text-decoration: none;
+  background-color: #3d7088;
+  border-radius: 5px;
+  content: "";
+  display: block;
+  height: 5px;
+  transition: width 0.5s;
+  width: 0;
+}
+.Members_Read_More:hover::after{
+  text-decoration: none;
+  width: 5%;
 }
 .Slider_Navigation_Div {
   display: flex;
