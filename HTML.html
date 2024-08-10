@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
       rel="stylesheet"
@@ -9,203 +10,712 @@
       href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./CSS.css" />
+    <link href="./CSS.css" rel="stylesheet" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Zain:wght@200;300;400;700;800;900&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
-    <p>NAVBAR + SLIDER</p>
-    <div class="About_Us_Outer_Div">
-      <div
-        class="About_Us_Title_Div"
-        data-aos-once="true"  data-aos="zoom-out-right"
-        data-aos-duration="1000"
-      >
-        <h1>About the Dubai Free zone council</h1>
+    <p class="red">NAVBAR</p>
+    <div class="container-fluid">
+      <div class="row Main_Slider">
+        <div class="swiper mainSwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div
+                class="d-flex flex-column justify-content-center Main_Slider_Header"
+              >
+                <span class="Main_Slider_Header_Text align-self-center">
+                  Welcome To
+                </span>
+                <h1 class="Main_Slider_Header_Text_Bold align-self-center">
+                  Dubai Freezone Council
+                </h1>
+              </div>
+              <div class="row">
+                <img src="./Assets/0.1.png" alt="" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div
+                class="d-flex flex-column justify-content-center Main_Slider_Header"
+              >
+                <span class="Main_Slider_Header_Text align-self-center">
+                  The Dubai Free Zones Council (DFZC)
+                </span>
+                <h1 class="Main_Slider_Header_Text_Bold align-self-center">
+                  Aims attract investments.
+                </h1>
+              </div>
+              <div class="row">
+                <img src="./Assets/0.2.png" alt="" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div
+                class="d-flex flex-column justify-content-center Main_Slider_Header"
+              >
+                <span class="Main_Slider_Header_Text align-self-center">
+                  The Council’s Efforts Support
+                </span>
+                <h1 class="Main_Slider_Header_Text_Bold align-self-center">
+                  Dubai Government’s strategic plans.
+                </h1>
+              </div>
+              <div class="row">
+                <img src="./Assets/0.3.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
       </div>
-      <div class="About_Us_Content_Div">
-        <div class="About_Us_Content_Left">
-          <div class="About_Us_Content_Left_Image_Div">
-            <img class="About_Us_Content_Left_Image" src="./Assets/1.png" />
+    </div>
+    <div class="TopButton" id="TopButton">
+      <button class="GoTop" onclick="GoToTop()">
+        <i class="bi bi-arrow-up-circle"></i>
+      </button>
+    </div>
+    <section class="section">
+      <div class="container-fluid About_Us_Outer_Div">
+        <div class="row">
+          <div
+            class="col About_Us_Title_Div"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            <h1 class="Title">About the Dubai Free Zone Council</h1>
           </div>
         </div>
-        <div class="About_Us_Content_Right">
-          <div class="About_Us_Content_Right_Counters">
-            <div class="About_Us_Content_Right_Counters_Grid">
-              <div class="About_Us_Content_Right_Counters_Row">
-                <div class="About_Us_Content_Right_Counters_Cell">
-                  <div class="About_Us_Content_Right_Counters_Cell_Content">
-                    <div class="About_Us_Content_Right_Counters_Cell_Up">
-                      UP
-                    </div>
-                    <div class="About_Us_Content_Right_Counters_Cell_Down">
-                      No. of Authorities
-                    </div>
-                  </div>
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="media">
+              <img src="./Assets/1.png" class="image-fluid About_Us_Image" />
+            </div>
+          </div>
+          <div class="col-sm-8">
+            <div class="row">
+              <div class="col-lg-4 col-6 text-center">
+                <div class="num-card">
+                  <span id="FZA"></span>
+                  <p>free zone authorities</p>
                 </div>
-                <div class="About_Us_Content_Right_Counters_Cell">
-                  <div class="About_Us_Content_Right_Counters_Cell_Content">
-                    <div class="About_Us_Content_Right_Counters_Cell_Up">
-                      UP
-                    </div>
-                    <div class="About_Us_Content_Right_Counters_Cell_Down">
-                      Free zones / units
-                    </div>
-                  </div>
+              </div>
+              <div class="col-lg-4 col-6 text-center">
+                <div class="num-card">
+                  <span id="FZ"></span>
+                  <p>free zones</p>
                 </div>
-                <div class="About_Us_Content_Right_Counters_Cell">
-                  <div class="About_Us_Content_Right_Counters_Cell_Content">
-                    <div class="About_Us_Content_Right_Counters_Cell_Up">
-                      UPK
+              </div>
+              <div class="col-lg-4 col-6 text-center">
+                <div class="num-card">
+                  <span id="DE"></span>%
+                  <p>of Dubai’s economy</p>
+                </div>
+              </div>
+              <div class="col-lg-4 col-6 text-center">
+                <div class="num-card">
+                  <span id="DFT"></span>%
+                  <p>of Dubai's foreign trade</p>
+                </div>
+              </div>
+              <div class="col-lg-4 col-6 text-center">
+                <div class="num-card">
+                  <span id="DL"></span>K+
+                  <p>Dubai land</p>
+                </div>
+              </div>
+              <div class="col-lg-4 col-6 text-center">
+                <div class="num-card">
+                  <span id="WF"></span>K+
+                  <p>workforce</p>
+                </div>
+              </div>
+            </div>
+            <h5 class="Right_Text">
+              To provide a platform for seamless collaboration amongst Dubai
+              Freezones order to enhance their performance and global
+              competitiveness by:
+            </h5>
+            <ul class="Right_Text">
+              <li>
+                Working towards favorable regulations and ecosystems with local,
+                regional and international bodies and regulators.
+              </li>
+              <li>
+                Enabling the sharing of best practices amongst council members
+              </li>
+              <li>
+                Providing a fair representation of the various Free zones
+                offerings
+              </li>
+            </ul>
+            <button class="button1">
+              <span>About Us</span>
+              <i class="bi bi-arrow-up-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container-fluid Members">
+        <div class="row" data-aos="fade-up" data-aos-duration="500">
+          <h1 class="Title">The Dubai Free Zone Council Members</h1>
+        </div>
+        <div class="row">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="row">
+                  <div class="col-sm-3 Card_Image_Div">
+                    <img class="Card_Image" src="./Assets/2.1.png" alt="" />
+                  </div>
+                  <div class="col-sm-9">
+                    <div
+                      id="Member_Name_1"
+                      class="row Member_Name"
+                      data-aos="fade-up"
+                      data-aos-duration="700"
+                    ></div>
+                    <div
+                      id="Member_Position_1"
+                      class="row Member_Pos"
+                      data-aos="fade-up"
+                      data-aos-duration="1000"
+                    ></div>
+                    <div
+                      class="row"
+                      data-aos="fade-up"
+                      data-aos-duration="1300"
+                    >
+                      <p id="Member_Quote_1" class="Member_Text"></p>
                     </div>
-                    <div class="About_Us_Content_Right_Counters_Cell_Down">
-                      Employment / workforce
+                    <div
+                      class="row"
+                      data-aos="fade-up"
+                      data-aos-duration="1600"
+                    >
+                      <a class="Members_Read_More" href="">Read More</a>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="About_Us_Content_Right_Counters_Row">
-                <div class="About_Us_Content_Right_Counters_Cell">
-                  <div class="About_Us_Content_Right_Counters_Cell_Content">
-                    <div class="About_Us_Content_Right_Counters_Cell_Up">
-                      UPT <span>AED</span>
+              <div class="swiper-slide">
+                <div class="row">
+                  <div class="col-sm-3 Card_Image_Div">
+                    <img class="Card_Image" src="./Assets/2.2.png" alt="" />
+                  </div>
+                  <div class="col-sm-9">
+                    <div
+                      id="Member_Name_2"
+                      class="row Member_Name"
+                      data-aos="fade-up"
+                      data-aos-duration="700"
+                    ></div>
+                    <div
+                      id="Member_Position_2"
+                      class="row Member_Pos"
+                      data-aos="fade-up"
+                      data-aos-duration="1000"
+                    ></div>
+                    <div
+                      class="row"
+                      data-aos="fade-up"
+                      data-aos-duration="1300"
+                    >
+                      <p id="Member_Quote_2" class="Member_Text"></p>
                     </div>
-                    <div class="About_Us_Content_Right_Counters_Cell_Down">
-                      GDP
+                    <div
+                      class="row"
+                      data-aos="fade-up"
+                      data-aos-duration="1600"
+                    >
+                      <a class="Members_Read_More" href="">Read More</a>
                     </div>
                   </div>
                 </div>
-                <div class="About_Us_Content_Right_Counters_Cell">
-                  <div class="About_Us_Content_Right_Counters_Cell_Content">
-                    <div class="About_Us_Content_Right_Counters_Cell_Up">
-                      UPK
+              </div>
+              <div class="swiper-slide">
+                <div class="row">
+                  <div class="col-sm-3 Card_Image_Div">
+                    <img class="Card_Image" src="./Assets/2.3.png" alt="" />
+                  </div>
+                  <div class="col-sm-9">
+                    <div
+                      id="Member_Name_3"
+                      class="row Member_Name"
+                      data-aos="fade-up"
+                      data-aos-duration="700"
+                    ></div>
+                    <div
+                      id="Member_Position_3"
+                      class="row Member_Pos"
+                      data-aos="fade-up"
+                      data-aos-duration="1000"
+                    ></div>
+                    <div
+                      class="row"
+                      data-aos="fade-up"
+                      data-aos-duration="1300"
+                    >
+                      <p id="Member_Quote_3" class="Member_Text"></p>
                     </div>
-                    <div class="About_Us_Content_Right_Counters_Cell_Down">
-                      Licenses
+                    <div
+                      class="row"
+                      data-aos="fade-up"
+                      data-aos-duration="1600"
+                    >
+                      <a class="Members_Read_More" href="">Read More</a>
                     </div>
                   </div>
                 </div>
-                <div class="About_Us_Content_Right_Counters_Cell">
-                  <div class="About_Us_Content_Right_Counters_Cell_Content">
-                    <div class="About_Us_Content_Right_Counters_Cell_Up">
-                      1.68B<span>AED</span>
+              </div>
+              <div class="swiper-slide">
+                <div class="row">
+                  <div class="col-sm-3 Card_Image_Div">
+                    <img class="Card_Image" src="./Assets/2.4.png" alt="" />
+                  </div>
+                  <div class="col-sm-9">
+                    <div
+                      id="Member_Name_4"
+                      class="row Member_Name"
+                      data-aos="fade-up"
+                      data-aos-duration="700"
+                    ></div>
+                    <div
+                      id="Member_Position_4"
+                      class="row Member_Pos"
+                      data-aos="fade-up"
+                      data-aos-duration="1000"
+                    ></div>
+                    <div
+                      class="row"
+                      data-aos="fade-up"
+                      data-aos-duration="1300"
+                    >
+                      <p id="Member_Quote_4" class="Member_Text"></p>
                     </div>
-                    <div class="About_Us_Content_Right_Counters_Cell_Down">
-                      Economic value
+                    <div
+                      class="row"
+                      data-aos="fade-up"
+                      data-aos-duration="1600"
+                    >
+                      <a class="Members_Read_More" href="">Read More</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="row">
+                  <div class="col-sm-3 Card_Image_Div">
+                    <img class="Card_Image" src="./Assets/2.5.png" alt="" />
+                  </div>
+                  <div class="col-sm-9">
+                    <div
+                      id="Member_Name_5"
+                      class="row Member_Name"
+                      data-aos="fade-up"
+                      data-aos-duration="700"
+                    ></div>
+                    <div
+                      id="Member_Position_5"
+                      class="row Member_Pos"
+                      data-aos="fade-up"
+                      data-aos-duration="1000"
+                    ></div>
+                    <div
+                      class="row"
+                      data-aos="fade-up"
+                      data-aos-duration="1300"
+                    >
+                      <p id="Member_Quote_5" class="Member_Text"></p>
+                    </div>
+                    <div
+                      class="row"
+                      data-aos="fade-up"
+                      data-aos-duration="1600"
+                    >
+                      <a class="Members_Read_More" href="">Read More</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="row">
+                  <div class="col-sm-3 Card_Image_Div">
+                    <img class="Card_Image" src="./Assets/2.6.png" alt="" />
+                  </div>
+                  <div class="col-sm-9">
+                    <div
+                      id="Member_Name_6"
+                      class="row Member_Name"
+                      data-aos="fade-up"
+                      data-aos-duration="700"
+                    ></div>
+                    <div
+                      id="Member_Position_6"
+                      class="row Member_Pos"
+                      data-aos="fade-up"
+                      data-aos-duration="1000"
+                    ></div>
+                    <div
+                      class="row"
+                      data-aos="fade-up"
+                      data-aos-duration="1300"
+                    >
+                      <p id="Member_Quote_6" class="Member_Text"></p>
+                    </div>
+                    <div
+                      class="row"
+                      data-aos="fade-up"
+                      data-aos-duration="1600"
+                    >
+                      <a class="Members_Read_More" href="">Read More</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="row">
+                  <div class="col-sm-3 Card_Image_Div">
+                    <img class="Card_Image" src="./Assets/2.7.png" alt="" />
+                  </div>
+                  <div class="col-sm-9">
+                    <div
+                      id="Member_Name_7"
+                      class="row Member_Name"
+                      data-aos="fade-up"
+                      data-aos-duration="700"
+                    ></div>
+                    <div
+                      id="Member_Position_7"
+                      class="row Member_Pos"
+                      data-aos="fade-up"
+                      data-aos-duration="1000"
+                    ></div>
+                    <div
+                      class="row"
+                      data-aos="fade-up"
+                      data-aos-duration="1300"
+                    >
+                      <p id="Member_Quote_7" class="Member_Text"></p>
+                    </div>
+                    <div
+                      class="row"
+                      data-aos="fade-up"
+                      data-aos-duration="1600"
+                    >
+                      <a class="Members_Read_More" href="">Read More</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="row">
+                  <div class="col-sm-3 Card_Image_Div">
+                    <img class="Card_Image" src="./Assets/2.8.png" alt="" />
+                  </div>
+                  <div class="col-sm-9">
+                    <div
+                      id="Member_Name_8"
+                      class="row Member_Name"
+                      data-aos="fade-up"
+                      data-aos-duration="700"
+                    ></div>
+                    <div
+                      id="Member_Position_8"
+                      class="row Member_Pos"
+                      data-aos="fade-up"
+                      data-aos-duration="1000"
+                    ></div>
+                    <div
+                      class="row"
+                      data-aos="fade-up"
+                      data-aos-duration="1300"
+                    >
+                      <p id="Member_Quote_8" class="Member_Text"></p>
+                    </div>
+                    <div
+                      class="row"
+                      data-aos="fade-up"
+                      data-aos-duration="1600"
+                    >
+                      <a class="Members_Read_More" href="">Read More</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="row">
+                  <div class="col-sm-3 Card_Image_Div">
+                    <img class="Card_Image" src="./Assets/2.9.png" alt="" />
+                  </div>
+                  <div class="col-sm-9">
+                    <div
+                      id="Member_Name_9"
+                      class="row Member_Name"
+                      data-aos="fade-up"
+                      data-aos-duration="700"
+                    ></div>
+                    <div
+                      id="Member_Position_9"
+                      class="row Member_Pos"
+                      data-aos="fade-up"
+                      data-aos-duration="1000"
+                    ></div>
+                    <div
+                      class="row"
+                      data-aos="fade-up"
+                      data-aos-duration="1300"
+                    >
+                      <p id="Member_Quote_9" class="Member_Text"></p>
+                    </div>
+                    <div
+                      class="row"
+                      data-aos="fade-up"
+                      data-aos-duration="1600"
+                    >
+                      <a class="Members_Read_More" href="">Read More</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="row">
+                  <div class="col-sm-3 Card_Image_Div">
+                    <img class="Card_Image" src="./Assets/2.10.png" alt="" />
+                  </div>
+                  <div class="col-sm-9">
+                    <div
+                      id="Member_Name_10"
+                      class="row Member_Name"
+                      data-aos="fade-up"
+                      data-aos-duration="700"
+                    ></div>
+                    <div
+                      id="Member_Position_10"
+                      class="row Member_Pos"
+                      data-aos="fade-up"
+                      data-aos-duration="1000"
+                    ></div>
+                    <div
+                      class="row"
+                      data-aos="fade-up"
+                      data-aos-duration="1300"
+                    >
+                      <p id="Member_Quote_10" class="Member_Text"></p>
+                    </div>
+                    <div
+                      class="row"
+                      data-aos="fade-up"
+                      data-aos-duration="1600"
+                    >
+                      <a class="Members_Read_More" href="">Read More</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="row">
+                  <div class="col-sm-3 Card_Image_Div">
+                    <img class="Card_Image" src="./Assets/2.11.png" alt="" />
+                  </div>
+                  <div class="col-sm-9">
+                    <div
+                      id="Member_Name_11"
+                      class="row Member_Name"
+                      data-aos="fade-up"
+                      data-aos-duration="700"
+                    ></div>
+                    <div
+                      id="Member_Position_11"
+                      class="row Member_Pos"
+                      data-aos="fade-up"
+                      data-aos-duration="1000"
+                    ></div>
+                    <div
+                      class="row"
+                      data-aos="fade-up"
+                      data-aos-duration="1300"
+                    >
+                      <p id="Member_Quote_11" class="Member_Text"></p>
+                    </div>
+                    <div
+                      class="row"
+                      data-aos="fade-up"
+                      data-aos-duration="1600"
+                    >
+                      <a class="Members_Read_More" href="">Read More</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="row">
+                  <div class="col-sm-3 Card_Image_Div">
+                    <img class="Card_Image" src="./Assets/2.12.png" alt="" />
+                  </div>
+                  <div class="col-sm-9">
+                    <div
+                      id="Member_Name_12"
+                      class="row Member_Name"
+                      data-aos="fade-up"
+                      data-aos-duration="700"
+                    ></div>
+                    <div
+                      id="Member_Position_12"
+                      class="row Member_Pos"
+                      data-aos="fade-up"
+                      data-aos-duration="1000"
+                    ></div>
+                    <div
+                      class="row"
+                      data-aos="fade-up"
+                      data-aos-duration="1300"
+                    >
+                      <p id="Member_Quote_12" class="Member_Text"></p>
+                    </div>
+                    <div
+                      class="row"
+                      data-aos="fade-up"
+                      data-aos-duration="1600"
+                    >
+                      <a class="Members_Read_More" href="">Read More</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="row">
+                  <div class="col-sm-3 Card_Image_Div">
+                    <img class="Card_Image" src="./Assets/2.13.png" alt="" />
+                  </div>
+                  <div class="col-sm-9">
+                    <div
+                      id="Member_Name_13"
+                      class="row Member_Name"
+                      data-aos="fade-up"
+                      data-aos-duration="700"
+                    ></div>
+                    <div
+                      id="Member_Position_13"
+                      class="row Member_Pos"
+                      data-aos="fade-up"
+                      data-aos-duration="1000"
+                    ></div>
+                    <div
+                      class="row"
+                      data-aos="fade-up"
+                      data-aos-duration="1300"
+                    >
+                      <p id="Member_Quote_13" class="Member_Text"></p>
+                    </div>
+                    <div
+                      class="row"
+                      data-aos="fade-up"
+                      data-aos-duration="1600"
+                    >
+                      <a class="Members_Read_More" href="">Read More</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="row">
+                  <div class="col-sm-3 Card_Image_Div">
+                    <img class="Card_Image" src="./Assets/2.14.png" alt="" />
+                  </div>
+                  <div class="col-sm-9">
+                    <div
+                      id="Member_Name_14"
+                      class="row Member_Name"
+                      data-aos="fade-up"
+                      data-aos-duration="700"
+                    ></div>
+                    <div
+                      id="Member_Position_14"
+                      class="row Member_Pos"
+                      data-aos="fade-up"
+                      data-aos-duration="1000"
+                    ></div>
+                    <div
+                      class="row"
+                      data-aos="fade-up"
+                      data-aos-duration="1300"
+                    >
+                      <p id="Member_Quote_14" class="Member_Text"></p>
+                    </div>
+                    <div
+                      class="row"
+                      data-aos="fade-up"
+                      data-aos-duration="1600"
+                    >
+                      <a class="Members_Read_More" href="">Read More</a>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="About_Us_Content_Right_Text">
-            <p data-aos-once="true"  data-aos="fade-up" data-aos-duration="1000">
-              To provide a platform for seamless collaboration amongst Dubai
-              Freezones order to enhance their performance and global
-              competitiveness by:
-            </p>
-            <ul>
-              <li data-aos-once="true"  data-aos="fade-up" data-aos-duration="1400">
-                Working towards favorable regulations and ecosystems with local,
-                regional and international bodies and regulators.
-              </li>
-              <li data-aos-once="true"  data-aos="fade-up" data-aos-duration="1800">
-                Enabling the sharing of best practices amongst council members
-              </li>
-              <li data-aos-once="true"  data-aos="fade-up" data-aos-duration="2200">
-                Providing a fair representation of the various Free zones
-                offerings
-              </li>
-            </ul>
-          </div>
-          <div class="About_Us_Content_Right_Button_Div">
-            <button class="About_Us_Content_Right_Button">About Us</button>
+        </div>
+        <div class="Slider_Navigation_Div">
+          <div class="Slider_Navigation">
+            <div class="Prev">&#10092;</div>
+            <div class="Slider_Pagination"></div>
+            <div class="Next">&#10093;</div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="Members_Outer_Div">
-      <div
-        class="Members_Title_Div"
-        data-aos-once="true"  data-aos="zoom-out-right"
-        data-aos-duration="1000"
-      >
-        <h1>The Dubai Free zone council members</h1>
-      </div>
-      <div class="Members_Arrows_Div">
-        <div class="Members_Arrow_Div_Contents">
-          <div class="Members_Card_Number">(1/14)</div>
-          <div class="Members_Arrows">
-            <div class="Member_Arrow_Left">&lt;</div>
-            <div class="Member_Arrow_Right">&gt;</div>
-          </div>
-        </div>
-      </div>
-      <div class="Members_Contents_Div">
-        <div class="Members_Content_Left">
-          <div class="Members_Content_Left_Image_Div">
-            <img src="./Assets/2.png" />
-          </div>
-        </div>
-        <div class="Members_Content_Right">
-          <div class="Members_Content_Right_Title_Div">
-            <p
-              class="Members_Content_Right_Title_Text"
-              data-aos-once="true"  data-aos="fade-up"
-              data-aos-duration="700"
-            >
-              H.H. Sheikh Ahmed Bin Saeed Al Maktoum
-            </p>
-          </div>
+    </section>
+    <section>
+      <div class="container-fluid Agenda_Outer_Div">
+        <div class="row">
           <div
-            class="Members_Content_Right_Position"
-            data-aos-once="true"  data-aos="fade-up"
+            class="Agenda_Title_Div"
+            data-aos="fade-up"
             data-aos-duration="1000"
           >
-            Chairman, Dubai Free Zones Council
-          </div>
-          <div class="Members_Content_Right_Plain_Text_Div">
-            <p
-              class="Members_Content_Right_Plain_Text"
-              data-aos-once="true"  data-aos="fade-up"
-              data-aos-duration="1300"
-            >
-              The Dubai Free Zones Council (DFZC) aims to drive the development
-              of free zones in Dubai in order to attract investments and create
-              an enabling environment for boosting diverse areas of the national
-            </p>
-          </div>
-          <div>
-            <a class="Members_Content_Right_Read_More" href="">Read More</a>
+            <h1 class="Title">Economic agenda d33</h1>
           </div>
         </div>
-      </div>
-      <div class="Members_Button_Div">
-        <button class="Member_All_Members_Button">All Members</button>
-      </div>
-    </div>
-    <div class="Agenda_Outer_Div">
-      <div class="Agenda_Inner_Div">
-        <div
-          class="Agenda_Title_Div"
-          data-aos-once="true"  data-aos="zoom-out-right"
-          data-aos-duration="1000"
-        >
-          <h1>Economic agenda d33</h1>
-        </div>
-        <div class="Agenda_Content_Card_Div">
-          <div class="Agenda_Content_Card">
-            <div class="Agenda_Content_Card_Left">
+        <div class="Agenda_Card">
+          <div class="row">
+            <div class="col-2 text-center align-self-start">
               <img
                 src="./Assets/Quote.svg"
                 class="Agenda_Content_Card_Left_Image"
               />
             </div>
-            <div class="Agenda_Content_Card_Center">
+            <div class="col-8">
               <div class="Agenda_Content_Card_Center_Quote">
                 <p
                   class="Agenda_Content_Card_Center_Quote_Text"
-                  data-aos-once="true"  data-aos="fade-up"
+                  data-aos-once="true"
+                  data-aos="fade-up"
                   data-aos-duration="1300"
                 >
                   "2033 will mark 200 years since the foundation of Dubai: the
@@ -217,19 +727,21 @@
               <div class="Agenda_Content_Card_Center_Quoter">
                 <p
                   class="Agenda_Content_Card_Center_Quoter_Text"
-                  data-aos-once="true"  data-aos="fade-up"
+                  data-aos-once="true"
+                  data-aos="fade-up"
                   data-aos-duration="1700"
                 >
                   -His Highness Sheikh Mohammed bin Rashid Al Maktoum
                 </p>
               </div>
               <div class="Agenda_Content_Card_Center_Button_Div">
-                <button class="Agenda_Content_Card_Center_Button">
-                  See More
+                <button class="button1">
+                  <span>About Us</span>
+                  <i class="bi bi-arrow-up-right"></i>
                 </button>
               </div>
             </div>
-            <div class="Agenda_Content_Card_Right">
+            <div class="col-2 align-self-end text-center">
               <img
                 src="./Assets/Quote.svg"
                 class="Agenda_Content_Card_Right_Image"
@@ -238,100 +750,268 @@
           </div>
         </div>
       </div>
-    </div>
-    <div class="Authorities_Outer_Div">
-      <div class="Authorities_Title_Div" data-aos-once="true" data-aos="zoom-out-right">
-        <h1>Freezone Authorities</h1>
+    </section>
+    <section>
+      <div class="container-fluid Authorities_Outer_Div">
+        <div class="row" data-aos="fade-up" data-aos-duration="1000">
+          <h1 class="Title">Freezone Authorities</h1>
+        </div>
+        <div class="row">
+          <div class="col-lg-3 col-1 Authorities_Image_Container">
+            <div data-aos="fade-up" data-aos-duration="400">
+              <img class="Authorities_Image" src="./Assets/4.jpeg" />
+            </div>
+          </div>
+          <div class="col-lg-3 col-1 Authorities_Image_Container">
+            <div data-aos="fade-up" data-aos-duration="400">
+              <img class="Authorities_Image" src="./Assets/5.png" />
+            </div>
+          </div>
+          <div class="col-lg-3 col-1 Authorities_Image_Container">
+            <div data-aos="fade-up" data-aos-duration="400">
+              <img class="Authorities_Image" src="./Assets/6.png" />
+            </div>
+          </div>
+          <div class="col-lg-3 col-1 Authorities_Image_Container">
+            <div data-aos="fade-up" data-aos-duration="400">
+              <img class="Authorities_Image" src="./Assets/7.png" />
+            </div>
+          </div>
+          <div class="col-lg-3 col-1 Authorities_Image_Container">
+            <div data-aos="fade-up" data-aos-duration="400">
+              <img class="Authorities_Image" src="./Assets/8.png" />
+            </div>
+          </div>
+          <div class="col-lg-3 col-1 Authorities_Image_Container">
+            <div data-aos="fade-up" data-aos-duration="400">
+              <img class="Authorities_Image" src="./Assets/9.png" />
+            </div>
+          </div>
+          <div class="col-lg-3 col-1 Authorities_Image_Container">
+            <div data-aos="fade-up" data-aos-duration="400">
+              <img class="Authorities_Image" src="./Assets/10.png" />
+            </div>
+          </div>
+          <div class="col-lg-3 col-1 Authorities_Image_Container">
+            <div data-aos="fade-up" data-aos-duration="400">
+              <img class="Authorities_Image" src="./Assets/11.png" />
+            </div>
+          </div>
+          <div class="col-lg-3 col-1 Authorities_Image_Container">
+            <div data-aos="fade-up" data-aos-duration="400">
+              <img class="Authorities_Image" src="./Assets/12.png" />
+            </div>
+          </div>
+          <div class="col-lg-3 col-1 Authorities_Image_Container">
+            <div data-aos="fade-up" data-aos-duration="400">
+              <img class="Authorities_Image" src="./Assets/13.png" />
+            </div>
+          </div>
+          <div class="col-lg-3 col-1 Authorities_Image_Container">
+            <div data-aos="fade-up" data-aos-duration="400">
+              <img class="Authorities_Image" src="./Assets/14.png" />
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="Authorities_Items_Div">
-        <div class="Authorities_Items_Rows">
-          <div class="Authorities_Items_Row">
-            <div class="Authorities_Items_Row_Item">
-              <div class="Authorities_Items_Row_Item_Image_Div" data-aos-once="true"  data-aos="fade-right" data-aos-duration="400">
-                <img
-                  class="Authorities_Items_Row_Item_Image"
-                  src="./Assets/4.jpeg"
-                />
-              </div>
-              <div class="Authorities_Items_Row_Item_Image_Div" data-aos-once="true"  data-aos="fade-right" data-aos-duration="600">
-                <img
-                  class="Authorities_Items_Row_Item_Image"
-                  src="./Assets/5.png"
-                />
-              </div>
-              <div class="Authorities_Items_Row_Item_Image_Div" data-aos-once="true"  data-aos="fade-right" data-aos-duration="800">
-                <img
-                  class="Authorities_Items_Row_Item_Image"
-                  src="./Assets/6.png"
-                />
-              </div>
-              <div class="Authorities_Items_Row_Item_Image_Div" data-aos-once="true"  data-aos="fade-right" data-aos-duration="1000">
-                <img
-                  class="Authorities_Items_Row_Item_Image"
-                  src="./Assets/7.png"
-                />
-              </div>
-            </div>
+    </section>
+    <section>
+      <div class="container-fluid Contact_Container">
+        <div class="row">
+          <div class="col-sm-6 Map_Div">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7224.769925120055!2d55.3887623!3d25.1226728!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f65779d72ec97%3A0xae5c351b3b7aca32!2sSilicon%20oasis%20headquarters!5e0!3m2!1sen!2s!4v1723068922848!5m2!1sen!2s"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
           </div>
-          <div class="Authorities_Items_Row">
-            <div class="Authorities_Items_Row_Item">
-              <div class="Authorities_Items_Row_Item_Image_Div" data-aos-once="true"  data-aos="fade-right" data-aos-duration="1000">
-                <img
-                  class="Authorities_Items_Row_Item_Image"
-                  src="./Assets/8.png"
-                />
-              </div>
-              <div class="Authorities_Items_Row_Item_Image_Div" data-aos-once="true"  data-aos="fade-right" data-aos-duration="1000">
-                <img
-                  class="Authorities_Items_Row_Item_Image"
-                  src="./Assets/9.png"
-                />
-              </div>
-              <div class="Authorities_Items_Row_Item_Image_Div" data-aos-once="true"  data-aos="fade-right" data-aos-duration="1000">
-                <img
-                  class="Authorities_Items_Row_Item_Image"
-                  src="./Assets/10.png"
-                />
-              </div>
-              <div class="Authorities_Items_Row_Item_Image_Div" data-aos-once="true"  data-aos="fade-right" data-aos-duration="1000">
-                <img
-                  class="Authorities_Items_Row_Item_Image"
-                  src="./Assets/11.png"
-                />
-              </div>
+          <div class="col-sm-6 Contact_Section">
+            <div class="row" data-aos="fade-up" data-aos-duration="1000">
+              <h1 class="Title">Contact Us</h1>
             </div>
-          </div>
-          <div class="Authorities_Items_Row">
-            <div class="Authorities_Items_Row_Item">
-              <div class="Authorities_Items_Row_Item_Image_Div" data-aos-once="true"  data-aos="fade-right" data-aos-duration="1000">
-                <img
-                  class="Authorities_Items_Row_Item_Image"
-                  src="./Assets/12.png"
-                />
-              </div>
-              <div class="Authorities_Items_Row_Item_Image_Div" data-aos-once="true"  data-aos="fade-right" data-aos-duration="1000">
-                <img
-                  class="Authorities_Items_Row_Item_Image"
-                  src="./Assets/13.png"
-                />
-              </div>
-              <div class="Authorities_Items_Row_Item_Image_Div" data-aos-once="true"  data-aos="fade-right" data-aos-duration="1000">
-                <img
-                  class="Authorities_Items_Row_Item_Image"
-                  src="./Assets/14.png"
-                />
+            <div class="row">
+              <div class="col-12">
+                <form action="">
+                  <div class="mb-3">
+                    <label class="form-label" for="">Full Name</label>
+                    <input class="form-control" type="text" />
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label" for="">Mobile Number</label>
+                    <input class="form-control" type="text" />
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label" for="">Email Address</label>
+                    <input class="form-control" type="email" />
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label" for="">Freezone Authority</label>
+                    <select class="form-select">
+                      <option selected>Authority 1</option>
+                      <option>Authority 2</option>
+                      <option>Authority 3</option>
+                      <option>Authority 4</option>
+                    </select>
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label" for="">Message</label>
+                    <textarea class="form-control" rows="5"></textarea>
+                  </div>
+                  <div class="mb-3 d-flex justify-content-center">
+                    <button class="Submit_Button">Submit</button>
+                  </div>
+                </form>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    
-    <button id="TopButton" onclick="GoToTop()">TOP</button>
+    </section>
+    <section>
+      <div class="container-fluid Footer">
+        <div class="row">
+          <div class="col">
+            <a href="">
+              <img class="Footer_Logo_Image" src="./Assets/Logo.png" alt="" />
+            </a>
+          </div>
+          <div class="col">
+            <h5 class="Footer_Title">Home</h5>
+            <div class="Footer_Element">
+              <a class="Footer_Link" href="">About Us</a>
+            </div>
+            <div class="Footer_Element">
+              <a class="Footer_Link" href="">Freezone Authorities</a>
+            </div>
+            <div class="Footer_Element">
+              <a class="Footer_Link" href="">Media Center</a>
+            </div>
+            <div class="Footer_Element">
+              <a class="Footer_Link" href="">Initiatives And Publications</a>
+            </div>
+          </div>
+          <div class="col">
+            <h5 class="Footer_Title">Media Center</h5>
+            <div class="Footer_Element">
+              <a class="Footer_Link" href="">News</a>
+            </div>
+            <div class="Footer_Element">
+              <a class="Footer_Link" href="">Events</a>
+            </div>
+            <div class="Footer_Element">
+              <a class="Footer_Link" href="">Media Gallery</a>
+            </div>
+          </div>
+          <div class="col">
+            <h5 class="Footer_Title">Contact Us</h5>
+            <div class="row Footer_Element">
+              <div class="col-sm-2 Footer_Contact_Icon">
+                <i class="bi bi-geo-alt"></i>
+              </div>
+              <div class="col-sm-10 Footer_Contact_Text">
+                <a
+                  class="Footer_Map_Link"
+                  href="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7224.769925120055!2d55.3887623!3d25.1226728!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f65779d72ec97%3A0xae5c351b3b7aca32!2sSilicon%20oasis%20headquarters!5e0!3m2!1sen!2s!4v1723068922848!5m2!1sen!2s"
+                  >Sheikh Mohammed Bin Zayed Rd, Dubai Silicon Oasis HQ, 9th
+                  Floor - Dubai, United Arab Emirates</a
+                >
+              </div>
+            </div>
+            <div class="row Footer_Element">
+              <div class="col-sm-2 Footer_Contact_Icon">
+                <i class="bi bi-envelope"></i>
+              </div>
+              <div class="col-sm-10 Footer_Contact_Text">
+                <a class="Footer_Map_Link" href="mailto:info@dfzc.ae"
+                  >info@dfzc.ae</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <h5 class="Footer_Title">Follow Us</h5>
+            <div class="row Footer_Element">
+              <div class="col-3">
+                <div class="Footer_Social_Icon_Div">
+                  <a class="Footer_Social_Icon" href="">
+                    <i class="bi bi-facebook"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="Footer_Social_Icon_Div">
+                  <a class="Footer_Social_Icon" href="">
+                    <i class="bi bi-twitter"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="Footer_Social_Icon_Div">
+                  <a class="Footer_Social_Icon" href="">
+                    <i class="bi bi-linkedin"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="Footer_Social_Icon_Div">
+                  <a class="Footer_Social_Icon" href="">
+                    <i class="bi bi-instagram"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/countup@1.8.2/countUp.js"></script>
     <script src="./JavaScript.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
+    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        loop: true,
+        pagination: {
+          el: ".Slider_Pagination",
+          type: "fraction",
+        },
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        navigation: {
+          nextEl: ".Next",
+          prevEl: ".Prev",
+        },
+      });
+    </script>
+    <script>
+      var swiper = new Swiper(".mainSwiper", {
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        autoplay: {
+          delay: 5000,
+          disableOnInteraction: false,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
     </script>
   </body>
 </html>
